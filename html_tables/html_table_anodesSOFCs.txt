@@ -1,0 +1,66 @@
+<table class="table">
+                <thead>
+                        <tr>
+                                <th>
+Ni-doped ceria NPs</th>
+                                <th>
+Crystalline size <em>D</em><sub>XRD</sub> (nm)</th>
+                                <th>
+Dislocation density, <em>δ</em> (nm<sup>−2</sup>)</th>
+                                <th>
+Lattice strain, <em>ε</em> = <em>β</em>/4 tan <em>θ</em> (×10<sup><sup>−3</sup></sup>)</th>
+                                <th>
+Lattice constant <em>A</em> (Å)</th>
+                        </tr>
+                </thead>
+                            <tbody>
+                        <tr>
+                                <td>
+NDC1</td>
+                                <td>
+33.03</td>
+                                <td>
+9.161 × 10<sup>−4</sup></td>
+                                <td>
+3.08</td>
+                                <td>
+5.413</td>
+                        </tr>
+                        <tr>
+                                <td>
+NDC2</td>
+                                <td>
+31.29</td>
+                                <td>
+1.021 × 10<sup>−3</sup></td>
+                                <td>
+3.22</td>
+                                <td>
+5.406</td>
+                        </tr>
+                        <tr>
+                                <td>
+NDC3</td>
+                                <td>
+31.23</td>
+                                <td>
+1.025 × 10<sup>−3</sup></td>
+                                <td>
+3.70</td>
+                                <td>
+5.403</td>
+                        </tr>
+                        <tr>
+                                <td>
+NDC4</td>
+                                <td>
+33.02</td>
+                                <td>
+9.154 × 10<sup>−4</sup></td>
+                                <td>
+3.24</td>
+                                <td>
+5.407</td>
+                        </tr>
+                </tbody>
+                    </table>
