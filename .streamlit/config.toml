@@ -1,1 +1,7 @@
-
+[theme]
+base="light"
+primaryColor="steelblue"
+backgroundColor="white"
+secondaryBackgroundColor="lightbluegray"
+textColor="black"
+font="sans serif"
