@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"Activated carbons": {"type": "array", "items": {"type": "object", "properties": {"Feedstock": {"type": "string"}, "Temperature (\u2218C)": {"type": "number"}, "Surface area (m2/g)": {"type": "number"}, "Total Pore Volume (cm3/g)": {"type": "number"}, "CO2 capacity (mg/g)": {"type": "number"}}}}}}

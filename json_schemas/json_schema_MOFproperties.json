@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"MOFs": {"type": "array", "items": {"type": "object", "properties": {"MOF": {"type": "string"}, "N2_BET": {"type": "number"}, "calcd_BET": {"type": "number"}, "N2_Vpore": {"type": "number"}, "CH4_Vpore": {"type": "number"}, "calcd_Vpore": {"type": "number"}, "\u03c1": {"type": "number"}, "metal": {"type": "number"}}}}}}

@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"Nanocomposites": {"type": "array", "items": {"type": "object", "properties": {"Electrode": {"type": "string"}, "Specific capacitance (F/g)": {"type": "number"}, "Electrolyte": {"type": "string"}, "Current density (A/g)": {"type": "string"}}}}}}
