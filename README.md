@@ -1,6 +1,6 @@
 # LLMsTablesToJson
 
-Generate structured JSON from tables contained in scientific articles
+#### Generate structured JSON from tables contained in scientific articles
 
 
 ## 🚀 Installation
