@@ -48,7 +48,7 @@ The input to obtain the JSON format of a table is the DOI identifier of a resear
 
 Using the `selenium` library, the HTML code of the table contained in the paper is extracted. Then, using the OpenAI’s models structured JSON is generated from the table HTML.
 
-The code to extract the table HTML from the paper DOI is in `html_table.py`. The code to generate JSON using OpenAI’s models is in `jsonformer_non_tokens.py` (based on: https://github.com/1rgs/jsonformer and https://github.com/martinezpl/jsonformer/tree/add-openai).
+The code to extract the table HTML from the paper DOI is in `html_table.py`. The code to generate JSON using OpenAI’s models is in `jsonformer_non_tokens.py` (based on: https://github.com/1rgs/jsonformer and https://github.com/martinezpl/jsonformer/tree/add-openai, Copyright (c) 2018 Rahul Sengottuvelu).
 
 
 ### Examples
