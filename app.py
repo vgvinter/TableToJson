@@ -3,9 +3,6 @@ import json
 from IPython.display import HTML
 import streamlit as st
 
-from utils import highlight_values
-
-
 
 def main():
 
