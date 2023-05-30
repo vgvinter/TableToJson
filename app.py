@@ -36,7 +36,10 @@ def main():
 
 
         if table == "10.1016/j.jece.2023.109643":
-            col1, col2 = st.columns([1,0.6])
+            st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
+                        font-size: 22px;">Properties of activated carbons for CO<sub>2</sub> adsorption:</p>', 
+                        unsafe_allow_html=True)
+            col1, col2 = st.columns([1,0.8])
             with col1:
                 with open("html_tables/html_table_carbonsCO2ads.txt", 'r') as file:
                     html_table_carbonsCO2ads = file.read()
@@ -50,7 +53,10 @@ def main():
 
 
         if table == "10.1021/ja4045289":
-            col1, col2 = st.columns([1,0.6])
+            st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
+                        font-size: 22px;">MOFs properties:</p>', 
+                        unsafe_allow_html=True)
+            col1, col2 = st.columns([1,0.8])
             with col1:
                 with open("html_tables/html_table_MOFproperties.txt", 'r') as file:
                     html_table_MOFproperties = file.read()
@@ -64,7 +70,10 @@ def main():
 
 
         if table == "10.1016/j.est.2023.107335":
-            col1, col2 = st.columns([1,0.6])
+            st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
+                        font-size: 22px;">Supercapacitor performance of 2D nanocomposite materials:</p>', 
+                        unsafe_allow_html=True)
+            col1, col2 = st.columns([1,0.8])
             with col1:
                 with open("html_tables/html_table_supercapacitor.txt", 'r') as file:
                     html_table_supercapacitor = file.read()
@@ -78,13 +87,16 @@ def main():
 
 
         if table == "10.1021/acs.energyfuels.1c02406":
+            st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
+                        font-size: 22px;">Catalysts for CO<sub>2</sub> Fischer–Tropsch conversion to liquid fuels:</p>', 
+                        unsafe_allow_html=True)
             with open("html_tables/html_table_catalystCO2.txt", 'r') as file:
                 html_table_catalystCO2 = file.read()
                 file.close()
             st.write(HTML(html_table_catalystCO2))
             st.write("")
             st.write("")
-            col1, col2, col3 = st.columns([1,2.7,1])
+            col1, col2, col3 = st.columns([1,5,1])
             with col2:
                 with open("structured_json_results/json_table_catalystCO2.json") as file:
                     json_table_catalystCO2 = json.load(file)
@@ -93,6 +105,9 @@ def main():
 
 
         if table == "10.1016/j.enconman.2018.09.020":
+            st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
+                        font-size: 22px;">Biomass properties:</p>', 
+                        unsafe_allow_html=True)
             with open("html_tables/html_table_biomass.txt", 'r') as file:
                 html_table_biomass = file.read()
                 file.close()
@@ -108,6 +123,9 @@ def main():
 
         
         if table == "10.1039/D3NJ00316G":
+            st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
+                        font-size: 22px;">Ni-doped ceria anode materials for SOFCs:</p>', 
+                        unsafe_allow_html=True)
             with open("html_tables/html_table_anodesSOFCs.txt", 'r') as file:
                 html_table_anodesSOFCs = file.read()
                 file.close()
@@ -120,9 +138,10 @@ def main():
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">JSON with the wrong promt</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
-                            font-size: 17px;">prompt: "Generate a object with the following schema \
+                            font-size: 16px;">prompt: "Generate a object with the following schema \
                             extracting the information from the provided table in html code:"</p>', 
                             unsafe_allow_html=True)
+                st.write("")
                 st.write("")
                 with open("structured_json_results/json_table_anodesSOFCs_wrong.json") as file:
                     json_table_anodesSOFCs_wrong = json.load(file)
@@ -132,7 +151,7 @@ def main():
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">JSON with the improved promt</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
-                            font-size: 17px;">prompt: ""Generate a object with the following schema extracting \
+                            font-size: 16px;">prompt: ""Generate a object with the following schema extracting \
                             the information from the provided table in html code (if you find numbers as \
                             1.025 × 10&lt;sub&gt;-3&lt;/sub&gt;</code>, this means 1.025e-3):"</p>', unsafe_allow_html=True)
                 with open("structured_json_results/json_table_anodesSOFCs.json") as file:
