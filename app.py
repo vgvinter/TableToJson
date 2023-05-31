@@ -30,7 +30,8 @@ def main():
         table = st.selectbox(
             "Choose a DOI",
             ("10.1016/j.jece.2023.109643", "10.1021/ja4045289", "10.1016/j.est.2023.107335", 
-            "10.1021/acs.energyfuels.1c02406", "10.1016/j.enconman.2018.09.020", "10.1039/D3NJ00316G"), 
+            "10.1021/acs.energyfuels.1c02406", "10.1016/j.enconman.2018.09.020", 
+            "10.1039/D3NJ00316G", "10.1016/j.ceramint.2019.11.066"), 
             label_visibility="collapsed"
         )
 
@@ -46,7 +47,7 @@ def main():
                     file.close()
                 st.write(HTML(html_table_carbonsCO2ads))
             with col2:
-                with open("structured_json_results/json_table_carbonsCO2ads.json") as file:
+                with open("structured_jsonformer_results/json_table_carbonsCO2ads.json") as file:
                     json_table_carbonsCO2ads = json.load(file)
                     file.close()
                 st.json(json_table_carbonsCO2ads)
@@ -63,7 +64,7 @@ def main():
                     file.close()
                 st.write(HTML(html_table_MOFproperties))
             with col2:
-                with open("structured_json_results/json_table_MOFproperties.json") as file:
+                with open("structured_jsonformer_results/json_table_MOFproperties.json") as file:
                     json_table_MOFproperties = json.load(file)
                     file.close()
                 st.json(json_table_MOFproperties)
@@ -80,7 +81,7 @@ def main():
                     file.close()
                 st.write(HTML(html_table_supercapacitor))
             with col2:
-                with open("structured_json_results/json_table_supercapacitor.json") as file:
+                with open("structured_jsonformer_results/json_table_supercapacitor.json") as file:
                     json_table_supercapacitor = json.load(file)
                     file.close()
                 st.json(json_table_supercapacitor)
@@ -98,7 +99,7 @@ def main():
             st.write("")
             col1, col2, col3 = st.columns([1,5,1])
             with col2:
-                with open("structured_json_results/json_table_catalystCO2.json") as file:
+                with open("structured_jsonformer_results/json_table_catalystCO2.json") as file:
                     json_table_catalystCO2 = json.load(file)
                     file.close()
                 st.json(json_table_catalystCO2)
@@ -116,7 +117,7 @@ def main():
             st.write("")
             col1, col2, col3 = st.columns([1,2.7,1])
             with col2:
-                with open("structured_json_results/json_table_biomass.json") as file:
+                with open("structured_jsonformer_results/json_table_biomass.json") as file:
                     json_table_biomass = json.load(file)
                     file.close()
                 st.json(json_table_biomass)
@@ -143,7 +144,7 @@ def main():
                             unsafe_allow_html=True)
                 st.write("")
                 st.write("")
-                with open("structured_json_results/json_table_anodesSOFCs_wrong.json") as file:
+                with open("structured_jsonformer_results/json_table_anodesSOFCs_wrong.json") as file:
                     json_table_anodesSOFCs_wrong = json.load(file)
                     file.close()
                 st.json(json_table_anodesSOFCs_wrong)
@@ -154,10 +155,26 @@ def main():
                             font-size: 16px;">prompt: ""Generate a object with the following schema extracting \
                             the information from the provided table in html code (if you find numbers as \
                             1.025 × 10&lt;sub&gt;-3&lt;/sub&gt;</code>, this means 1.025e-3):"</p>', unsafe_allow_html=True)
-                with open("structured_json_results/json_table_anodesSOFCs.json") as file:
+                with open("structured_jsonformer_results/json_table_anodesSOFCs.json") as file:
                     json_table_anodesSOFCs = json.load(file)
                     file.close()
                 st.json(json_table_anodesSOFCs)
+        
+        if table == "10.1016/j.ceramint.2019.11.066":
+            st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
+                        font-size: 22px;">Perovskite-structured cathode materials for SOFCs:</p>', 
+                        unsafe_allow_html=True)
+            col1, col2 = st.columns([1,0.8])
+            with col1:
+                with open("html_tables/html_table_perovskiteSOFCs.txt", 'r') as file:
+                    html_table_carbonsCO2ads = file.read()
+                    file.close()
+                st.write(HTML(html_table_carbonsCO2ads))
+            with col2:
+                with open("structured_jsonformer_results/json_table_perovskiteSOFCs.json") as file:
+                    json_table_carbonsCO2ads = json.load(file)
+                    file.close()
+                st.json(json_table_carbonsCO2ads)
 
 
 if __name__ == "__main__":
