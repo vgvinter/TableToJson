@@ -1,4 +1,4 @@
-# LLMsTablesToJson
+# TablesToJson
 
 #### Generate structured JSON from tables contained in scientific articles
 
@@ -6,15 +6,8 @@
 ## 💪 Getting Started
 
 ```python 
-from LLMsTablesToJson.html_table import get_driver, extract_tableSource, extract_table, quit_driver
-from LLMsTablesToJson.jsonformer_non_tokens import JsonformerNoTokens, OpenAIModel, highlight_values
-
-driver = get_driver(doi, chromedriver_path)
-tableSource = extract_tableSource(driver)
-
-table_num = 1
-html_table_example = extract_table(tableSource, table_num)
-quit_driver(driver)
+from TablesToJson.html_table import get_driver, extract_tableSource, extract_table, quit_driver
+from TablesToJson.jsonformer_non_tokens import JsonformerNoTokens, OpenAIModel, highlight_values
 
 builder = JsonformerNoTokens(
     model=OpenAIModel("text-davinci-003", debug=False),
@@ -38,7 +31,7 @@ highlight_values(result_example)
 The most recent code and data can be installed directly from GitHub with:
 
 ```bash
-$ pip install git+https://github.com/vgvinter/LLMsTablesToJson.gitt
+$ pip install git+https://github.com/vgvinter/TablesToJson.gitt
 ```
 
 
@@ -57,5 +50,5 @@ The generation of structured JSON for different tables extracted from research p
 
 The HTML code for the example tables is in the `html_tables` folder. The JSON schemas given to the model to generate valid JSON are in the `json_schemas` folder. The generated JSON for all the examples are in the `structured_json_folder`.
 
-The code of a demo app to visualize the results is available in `app.py`.
+The code of an app to visualize the results is available in `app.py`.
 
