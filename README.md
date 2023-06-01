@@ -1,4 +1,4 @@
-# TablesToJson
+# TableToJson
 
 #### Generate structured JSON from tables contained in scientific articles
 
@@ -6,8 +6,8 @@
 ## 💪 Getting Started
 
 ```python 
-from TablesToJson.html_table import get_driver, extract_tableSource, extract_table, quit_driver
-from TablesToJson.jsonformer_non_tokens import JsonformerNoTokens, OpenAIModel, highlight_values
+from TableToJson.html_table import get_driver, extract_tableSource, extract_table, quit_driver
+from TableToJson.jsonformer_non_tokens import JsonformerNoTokens, OpenAIModel, highlight_values
 
 builder = JsonformerNoTokens(
     model=OpenAIModel("text-davinci-003", debug=False),
@@ -31,7 +31,7 @@ highlight_values(result_example)
 The most recent code and data can be installed directly from GitHub with:
 
 ```bash
-$ pip install git+https://github.com/vgvinter/TablesToJson.gitt
+$ pip install git+https://github.com/vgvinter/TableToJson.gitt
 ```
 
 

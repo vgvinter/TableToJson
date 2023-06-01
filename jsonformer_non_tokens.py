@@ -86,12 +86,19 @@ class JsonformerNoTokens:
             else:
                 return int(number)
         except (ValueError, StopIteration):
-            self.debug(f"[generate_number] FAILED")
-            if iterations > 3:
-                raise ValueError("Failed to generate a valid number")
-            return self.generate_number(
-                temperature=self.temperature * 1.3, iterations=iterations + 1
-            )
+            try:
+                pattern = [r"NA", r"NAN", r"NaN", r"nan"]
+                regex = re.compile(r'\b(' + '|'.join(pattern) + r')\b')
+                number = [m.group() for m in regex.finditer(response)]
+                output = number
+                return output[0]
+            except (ValueError, StopIteration):          
+                self.debug(f"[generate_number] FAILED")
+                if iterations > 3:
+                    raise ValueError("Failed to generate a valid number")
+                return self.generate_number(
+                    temperature=self.temperature * 1.3, iterations=iterations + 1
+                )
 
     def generate_boolean(self) -> bool:
         prompt = self.get_prompt()
