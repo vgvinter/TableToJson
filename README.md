@@ -6,7 +6,6 @@
 ## 💪 Getting Started
 
 ```python 
-from TableToJson.html_table import get_driver, extract_tableSource, extract_table, quit_driver
 from TableToJson.jsonformer_non_tokens import JsonformerNoTokens, OpenAIModel, highlight_values
 
 builder = JsonformerNoTokens(
