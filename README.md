@@ -1,6 +1,6 @@
 # TableToJson
 
-### Generate structured JSON from tables contained in scientific articles
+## Generate structured JSON from tables contained in scientific articles
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vgvinter-tabletojson-app-kt5aiv.streamlit.app)
 
@@ -14,7 +14,7 @@ builder = JsonformerNoTokens(
     json_schema=json_schema_example,
     text=html_table_example,
     prompt="Generate a object with the following schema extracting the information from the provided table in html code:",
-    temperature=0.1,
+    temperature=0.5,
     debug=True,
     max_array_length=10,
     max_string_token_length=10,
