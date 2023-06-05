@@ -49,5 +49,5 @@ The generation of structured JSON for different tables extracted from research p
 
 The HTML code for the example tables is in the `html_tables` folder. The JSON schemas given to the model to generate valid JSON are in the `json_schemas` folder. The generated JSON for all the examples are in the `structured_json_folder`.
 
-The code of an app to visualize the results is available in `app.py`.
+A demo app to visualize the results is available in this [link](https://vgvinter-tabletojson-app-kt5aiv.streamlit.app/).
 
