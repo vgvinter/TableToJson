@@ -1,5 +1,6 @@
 import json
 
+import IPython
 from IPython.display import HTML
 import streamlit as st
 
