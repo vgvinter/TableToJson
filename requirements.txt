@@ -1,2 +1,2 @@
-ipython
-streamlit
+ipython==8.14.0
+streamlit==1.23.1
