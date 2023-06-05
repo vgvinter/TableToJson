@@ -23,7 +23,6 @@ SOFTWARE.
 """
 
 
-import os
 import json
 import re
 from termcolor import colored
