@@ -1,7 +1,6 @@
 # TableToJson
 
-
-#### Generate structured JSON from tables contained in scientific articles
+### Generate structured JSON from tables contained in scientific articles
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vgvinter-tabletojson-app-kt5aiv.streamlit.app)
 
