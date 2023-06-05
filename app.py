@@ -192,7 +192,7 @@ def main():
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; color:steelblue; \
-                            font-size: 18px;">JSON with the wrong promt</p>', unsafe_allow_html=True)
+                            font-size: 18px;">JSON with the standard promt</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
                             font-size: 14px;">prompt: "Generate an object with the following schema \
                             extracting the information from the provided table in html code:"</p>', 
@@ -250,7 +250,8 @@ def main():
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; color:steelblue; \
-                            font-size: 18px;">JSON with the wrong promt</p>', unsafe_allow_html=True)
+                            font-size: 18px;">JSON with the standard promt (and too low value of \
+                            <code>max_string_token_length</code> argument)</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
                             font-size: 14px;">prompt: "Generate an object with the following schema \
                             extracting the information from the provided table in html code:"</p>', 
@@ -268,7 +269,8 @@ def main():
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; color:steelblue; \
-                            font-size: 18px;">JSON with the improved promt</p>', unsafe_allow_html=True)
+                            font-size: 18px;">JSON with the improved promt (and higher value of \
+                            <code>max_string_token_length</code> argument)</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
                             font-size: 14px;">prompt: ""Generate an object with the following schema extracting \
                             the information from the provided table in html code (if you find numbers as \
@@ -287,6 +289,7 @@ def main():
                 st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
                             font-size: 14px;">prompt: "Generate a JSON object extracting the information \
                             from this table in html code:"</p>', unsafe_allow_html=True)
+                st.write("")
                 st.write("")
                 st.write("")
                 st.write("")
