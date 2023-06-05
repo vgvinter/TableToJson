@@ -1,21 +1,6 @@
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - ipywidgets==8.0.6
-  - numpy==1.24.2
-  - pip==22.3.1
-  - python==3.10.11
-  - selenium==4.9.1
-  - pip:
-      - ipython==8.12.0
-      - langchain==0.0.179
-      - openai==0.27.4
-      - pandas==1.5.3
-      - scikit-learn==1.2.2
-      - scipy==1.10.1
-      - streamlit==1.22.0
-      - streamlit-option-menu==0.3.2
-      - termcolor==2.3.0
-      - uvicorn==0.21.1
-
+name: base
+dependences:
+  pip:
+  - ipython==8.14.0
+  - python=3.9.16
+  - streamlit==1.23.1
