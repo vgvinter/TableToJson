@@ -272,7 +272,6 @@ def main():
                             unsafe_allow_html=True)
                 st.write("")
                 st.write("")
-                st.write("")
                 with open("structured_openai_results/davinci_anodesSOFCs.json") as file:
                     davinci_catalystCO2 = json.load(file)
                     file.close()
