@@ -158,7 +158,7 @@ def main():
             st.write(HTML(html_table_biomass))
             st.write("")
             st.write("")
-            col1, col2 = st.columns([1,1])
+            col1, col2, col3 = st.columns(3)
             with col1:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
@@ -175,6 +175,22 @@ def main():
                     davinci_biomass = json.load(file)
                     file.close()
                 st.json(davinci_biomass)
+            with col3:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
+                            font-size: 18px;">changed the JSON object name to "Catalysts"</p>', 
+                            unsafe_allow_html=True)
+                st.write("")
+                st.write("")
+                st.write("")
+                st.write("")
+                st.write("")
+                with open("structured_openai_results/davinci_catalystCO2_new_schema.json") as file:
+                    davinci_anodesSOFCs = json.load(file)
+                    file.close()
+                st.json(davinci_anodesSOFCs)
 
         
         if table == "10.1039/D3NJ00316G":
