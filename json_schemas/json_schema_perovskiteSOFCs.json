@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"Perovskite SOFC cathodes": {"type": "array", "items": {"type": "object", "properties": {"Composition": {"type": "string"}, "\ud835\udf48\ud835\udc86  (Scm\u22121)": {"type": "string"}, "\ud835\udf48\ud835\udc8a  (Scm\u22121)": {"type": "string"}, "CTE (10\u22126K\u22121)": {"type": "string"}, "References": {"type": "string"}}}}}}
