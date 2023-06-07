@@ -26,15 +26,6 @@ highlight_values(result_example)
 ```
 
 
-## 🚀 Installation
-
-The most recent code and data can be installed directly from GitHub with:
-
-```bash
-$ pip install git+https://github.com/vgvinter/TableToJson.gitt
-```
-
-
 ## :memo: Description
 
 The input to obtain the JSON format of a table is the DOI identifier of a research paper and the table number in the article.
