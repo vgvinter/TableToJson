@@ -1,6 +1,5 @@
 import json
 
-import IPython
 from IPython.display import HTML
 import streamlit as st
 
@@ -37,6 +36,7 @@ def main():
         )
 
 
+
         if table == "10.1016/j.jece.2023.109643":
             st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
                         font-size: 22px;">Properties of activated carbons for CO<sub>2</sub> adsorption:</p>', 
@@ -50,19 +50,20 @@ def main():
             with col1:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                with open("structured_jsonformer_results/json_table_carbonsCO2ads.json") as file:
-                    json_table_carbonsCO2ads = json.load(file)
-                    file.close()
-                st.json(json_table_carbonsCO2ads)
-            with col2:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
                 with open("structured_openai_results/davinci_carbonsCO2ads.json") as file:
                     davinci_carbonsCO2ads = json.load(file)
                     file.close()
                 st.json(davinci_carbonsCO2ads)
+            with col2:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                with open("structured_jsonformer_results/json_table_carbonsCO2ads.json") as file:
+                    json_table_carbonsCO2ads = json.load(file)
+                    file.close()
+                st.json(json_table_carbonsCO2ads)
+
 
 
         if table == "10.1021/ja4045289":
@@ -77,19 +78,20 @@ def main():
             with col1:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                with open("structured_jsonformer_results/json_table_MOFproperties.json") as file:
-                    json_table_MOFproperties = json.load(file)
-                    file.close()
-                st.json(json_table_MOFproperties)
-            with col2:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
                 with open("structured_openai_results/davinci_MOFproperties.json") as file:
                     davinci_MOFproperties = json.load(file)
                     file.close()
                 st.json(davinci_MOFproperties)
+            with col2:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                with open("structured_jsonformer_results/json_table_MOFproperties.json") as file:
+                    json_table_MOFproperties = json.load(file)
+                    file.close()
+                st.json(json_table_MOFproperties)
+
 
 
         if table == "10.1016/j.est.2023.107335":
@@ -104,19 +106,20 @@ def main():
             with col1:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                with open("structured_jsonformer_results/json_table_supercapacitor.json") as file:
-                    json_table_supercapacitor = json.load(file)
-                    file.close()
-                st.json(json_table_supercapacitor)
-            with col2:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
                 with open("structured_openai_results/davinci_supercapacitor.json") as file:
                     davinci_supercapacitor = json.load(file)
                     file.close()
                 st.json(davinci_supercapacitor)
+            with col2:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                with open("structured_jsonformer_results/json_table_supercapacitor.json") as file:
+                    json_table_supercapacitor = json.load(file)
+                    file.close()
+                st.json(json_table_supercapacitor)
+            
 
 
         if table == "10.1021/acs.energyfuels.1c02406":
@@ -133,21 +136,6 @@ def main():
             with col1:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                st.write("")
-                st.write("")
-                st.write("")
-                st.write("")
-                st.write("")
-                st.write("")
-                st.write("")
-                with open("structured_jsonformer_results/json_table_catalystCO2.json") as file:
-                    json_table_catalystCO2 = json.load(file)
-                    file.close()
-                st.json(json_table_catalystCO2)
-            with col2:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; color:grey; \
                             font-size: 18px;">OpenAI model did not generate the JSON object name when \
@@ -159,7 +147,7 @@ def main():
                     davinci_catalystCO2 = json.load(file)
                     file.close()
                 st.json(davinci_catalystCO2)
-            with col3:
+            with col2:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
@@ -171,6 +159,21 @@ def main():
                     davinci_catalystCO2_new_schema = json.load(file)
                     file.close()
                 st.json(davinci_catalystCO2_new_schema)
+            with col3:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                st.write("")
+                st.write("")
+                st.write("")
+                st.write("")
+                st.write("")
+                st.write("")
+                with open("structured_jsonformer_results/json_table_catalystCO2.json") as file:
+                    json_table_catalystCO2 = json.load(file)
+                    file.close()
+                st.json(json_table_catalystCO2)
+            
 
 
         if table == "10.1016/j.enconman.2018.09.020":
@@ -187,19 +190,20 @@ def main():
             with col1:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                with open("structured_jsonformer_results/json_table_biomass.json") as file:
-                    json_table_biomass = json.load(file)
-                    file.close()
-                st.json(json_table_biomass)
-            with col2:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
                 with open("structured_openai_results/davinci_biomass.json") as file:
                     davinci_biomass = json.load(file)
                     file.close()
                 st.json(davinci_biomass)
+            with col2:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                with open("structured_jsonformer_results/json_table_biomass.json") as file:
+                    json_table_biomass = json.load(file)
+                    file.close()
+                st.json(json_table_biomass)
+            
 
         
         if table == "10.1039/D3NJ00316G":
@@ -216,6 +220,23 @@ def main():
             col1, col2, col3 = st.columns(3)
             with col1:
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
+                            font-size: 18px;">standard prompt</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
+                            font-size: 14px;">prompt: "Generate a JSON object extracting the information \
+                            from this table in html code:"</p>', 
+                            unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
+                            font-size: 17px;">OpenAI model did not generate the JSON object name (see below)</p>', 
+                            unsafe_allow_html=True)
+                st.write("")
+                with open("structured_openai_results/davinci_anodesSOFCs.json") as file:
+                    davinci_anodesSOFCs = json.load(file)
+                    file.close()
+                st.json(davinci_anodesSOFCs)
+            with col2:
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; color:steelblue; \
                             font-size: 18px;">JSON with the standard prompt</p>', unsafe_allow_html=True)
@@ -229,7 +250,7 @@ def main():
                     json_table_anodesSOFCs_wrong = json.load(file)
                     file.close()
                 st.json(json_table_anodesSOFCs_wrong)
-            with col2:
+            with col3:
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; color:steelblue; \
@@ -243,22 +264,8 @@ def main():
                     json_table_anodesSOFCs = json.load(file)
                     file.close()
                 st.json(json_table_anodesSOFCs)
-            with col3:
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
-                            font-size: 18px;">standard prompt</p>', unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
-                            font-size: 14px;">prompt: "Generate a JSON object extracting the information \
-                            from this table in html code:"</p>', 
-                            unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
-                            font-size: 17px;">OpenAI model did not generate the JSON object name (see below)</p>', 
-                            unsafe_allow_html=True)
-                with open("structured_openai_results/davinci_anodesSOFCs.json") as file:
-                    davinci_anodesSOFCs = json.load(file)
-                    file.close()
-                st.json(davinci_anodesSOFCs)
+            
+
 
             st.write("")
             col1, col2 = st.columns([1,1])
@@ -288,6 +295,7 @@ def main():
                     davinci_catalystCO2_new_schema = json.load(file)
                     file.close()
                 st.json(davinci_catalystCO2_new_schema)
+            
 
 
         if table == "10.1016/j.ceramint.2019.11.066":
@@ -300,40 +308,6 @@ def main():
             st.write(HTML(html_table_carbonsCO2ads))
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
-                            font-size: 18px;">JSON with the standard prompt (and too low value of \
-                            <code>max_string_token_length</code> argument)</p>', unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
-                            font-size: 14px;">prompt: "Generate an object with the following schema \
-                            extracting the information from the provided table in html code:"</p>', 
-                            unsafe_allow_html=True)
-                st.write("")
-                st.write("")
-                st.write("")
-                with open("structured_jsonformer_results/json_table_perovskiteSOFCs.json") as file:
-                    json_table_perovskiteSOFCs = json.load(file)
-                    file.close()
-                st.json(json_table_perovskiteSOFCs)
-            with col2:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
-                            font-size: 18px;">JSON with the improved prompt (and higher value of \
-                            <code>max_string_token_length</code> argument)</p>', unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
-                            font-size: 14px;">prompt: ""Generate an object with the following schema extracting \
-                            the information from the provided table in html code (if you find numbers as \
-                            1.025 × 10&lt;sub&gt;-3&lt;/sub&gt;</code>, this means 1.025e-3), decode Unicode \
-                            characters in your response:"</p>', unsafe_allow_html=True)
-                with open("structured_jsonformer_results/json_table_perovskiteSOFCs_names_regular.json") as file:
-                    json_table_perovskiteSOFCs_names_regular = json.load(file)
-                    file.close()
-                st.json(json_table_perovskiteSOFCs_names_regular)            
-            with col3:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
@@ -351,9 +325,43 @@ def main():
                 with open("structured_openai_results/davinci_perovskiteSOFCs.json") as file:
                     davinci_carbonsCO2ads = json.load(file)
                     file.close()
-                st.json(davinci_carbonsCO2ads)
-
-
+                st.json(davinci_carbonsCO2ads)           
+            with col2:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
+                            font-size: 18px;">JSON with the standard prompt (and too low value of \
+                            <code>max_string_token_length</code> argument)</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
+                            font-size: 14px;">prompt: "Generate an object with the following schema \
+                            extracting the information from the provided table in html code:"</p>', 
+                            unsafe_allow_html=True)
+                st.write("")
+                st.write("")
+                st.write("")
+                with open("structured_jsonformer_results/json_table_perovskiteSOFCs.json") as file:
+                    json_table_perovskiteSOFCs = json.load(file)
+                    file.close()
+                st.json(json_table_perovskiteSOFCs)
+            with col3:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; color:steelblue; \
+                            font-size: 18px;">JSON with the improved prompt (and higher value of \
+                            <code>max_string_token_length</code> argument)</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
+                            font-size: 14px;">prompt: "Generate an object with the following schema extracting \
+                            the information from the provided table in html code (if you find numbers as \
+                            1.025 × 10&lt;sub&gt;-3&lt;/sub&gt;</code>, this means 1.025e-3), decode Unicode \
+                            characters in your response:"</p>', unsafe_allow_html=True)
+                with open("structured_jsonformer_results/json_table_perovskiteSOFCs_names_regular.json") as file:
+                    json_table_perovskiteSOFCs_names_regular = json.load(file)
+                    file.close()
+                st.json(json_table_perovskiteSOFCs_names_regular) 
+            
+            
         
         if table == "10.1021/ja4045289_wrong schema":
             st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:steelblue; \
@@ -367,17 +375,6 @@ def main():
             with col1:
                 st.write("")
                 st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
-                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
-                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
-                            font-size: 18px;">values in table are inserted in the provided \
-                            wrong schema</p>', unsafe_allow_html=True)
-                with open("structured_jsonformer_results/json_table_MOFproperties_wrong_schema.json") as file:
-                    json_table_MOFproperties_wrong_schema = json.load(file)
-                    file.close()
-                st.json(json_table_MOFproperties_wrong_schema)
-            with col2:
-                st.write("")
-                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
                             font-size: 20px;">OpenAI model</p>', unsafe_allow_html=True)
                 st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
                             font-size: 18px;">new schema is created following the table</p>', 
@@ -386,6 +383,18 @@ def main():
                     davinci_MOFproperties_wrong_schema = json.load(file)
                     file.close()
                 st.json(davinci_MOFproperties_wrong_schema)
+            with col2:
+                st.write("")
+                st.markdown('<p style="font-family: sans-serif; font-weight: bold; color:steelblue; \
+                            font-size: 20px;">jsonformer + OpenAI model</p>', unsafe_allow_html=True)
+                st.markdown('<p style="font-family: sans-serif; font-weight: normal; color:grey; \
+                            font-size: 18px;">values in table are inserted in the provided \
+                            wrong schema</p>', unsafe_allow_html=True)
+                with open("structured_jsonformer_results/json_table_MOFproperties_wrong_schema.json") as file:
+                    json_table_MOFproperties_wrong_schema = json.load(file)
+                    file.close()
+                st.json(json_table_MOFproperties_wrong_schema)
+            
 
 
 if __name__ == "__main__":
