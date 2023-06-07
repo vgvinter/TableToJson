@@ -4,7 +4,7 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vgvinter-tabletojson-app-kt5aiv.streamlit.app)
 
-## 💪 Getting Started
+## Getting Started
 
 ```python 
 from TableToJson.jsonformer_non_tokens import JsonformerNoTokens, OpenAIModel, highlight_values
@@ -23,6 +23,15 @@ builder = JsonformerNoTokens(
 result_example = builder()
 
 highlight_values(result_example)
+```
+
+
+## 🚀 Installation
+
+The most recent code and data can be installed directly from GitHub with:
+
+```bash
+$ pip install git+https://github.com/vgvinter/TableToJson.git
 ```
 
 
