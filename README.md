@@ -1,5 +1,12 @@
 # TableToJson
 
+<p align="center">
+    <a href="https://zenodo.org/badge/latestdoi/646958035">
+        <img src="https://zenodo.org/badge/646958035.svg" alt="DOI">
+    </a>
+</p>
+
+
 ## Generate structured JSON from tables in scientific articles
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vgvinter-tabletojson-app-kt5aiv.streamlit.app)
