@@ -1,6 +1,6 @@
 # TableToJson
 
-<p align="center">
+<p>
     <a href="https://zenodo.org/badge/latestdoi/646958035">
         <img src="https://zenodo.org/badge/646958035.svg" alt="DOI">
     </a>
